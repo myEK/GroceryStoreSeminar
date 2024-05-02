@@ -69,6 +69,11 @@ public class Controller {
         return sale.getPay();
     }
     
+    /**
+     * End the sale med avsluta Sale, Skriva kvitto och upptatera de olika exstarna systemen
+     * @param pay Kunden betalar kontant
+     * @return Växel
+     */
     public double endSale(double pay){
         double exchange = sale.addPay(pay);
         EndSaleDTO endSaleData = sale.endSale();

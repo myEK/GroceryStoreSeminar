@@ -37,6 +37,10 @@ public class ItemList {
         return this.item.getID();
     }
     
+    /**
+     * Cerat a new DTO struktur of the item. 
+     * @return 
+     */
     public ItemListDTO getDTO(){
         return new ItemListDTO(this.item, this.Quantity);
     } 
