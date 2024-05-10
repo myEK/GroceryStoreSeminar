@@ -22,10 +22,14 @@ public class ExternalIventorySystem {
      * Sert the data in database. 
      * @param itemID IDnummret för produkten
      * @return ItemDTO of the Item or Null if not find.
-     * @throws ExceptionItemNotFound
+     * @throws ExceptionItemNotFound if item not find
+     * @throws ExceptionDatabaseFailConnection To the conation is bad  
      */
-    public ItemDTO serachItem(String itemID) throws ExceptionItemNotFound{
-       try {
+    public ItemDTO serachItem(String itemID) throws ExceptionItemNotFound, ExceptionDatabaseFailConnection{
+       if(db.getClass() == null){
+           throw new ExceptionDatabaseFailConnection("Can not conect to the databas, (ExternalIventorySystem) ");          
+       }
+        try {
            return db.get(itemID);
        } catch (ExceptionItemNotFound exc){
            throw exc;

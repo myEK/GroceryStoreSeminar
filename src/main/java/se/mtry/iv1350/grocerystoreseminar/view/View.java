@@ -3,6 +3,7 @@ package se.mtry.iv1350.grocerystoreseminar.view;
 import java.io.IOException;
 import se.mtry.iv1350.grocerystoreseminar.controller.Controller;
 import se.mtry.iv1350.grocerystoreseminar.dto.SaleLiveLoggDTO;
+import se.mtry.iv1350.grocerystoreseminar.integration.ExceptionDatabaseFailConnection;
 import se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound;
 import se.mtry.iv1350.grocerystoreseminar.util.loggSystem;
 /**
@@ -37,8 +38,9 @@ public class View {
             SaleLiveLoggDTO a = contr.addItem(itemID);
             System.out.println(" -- Add 1 item of id " + itemID + ": \n" + a.toString());
         } catch (ExceptionItemNotFound exc){
-            writeErrorLogg("Can not add the item to the shoppinglist", exc);
-            
+            writeErrorLogg("Can not find the itom", exc);
+        } catch (ExceptionDatabaseFailConnection exc){
+            writeErrorLogg("Unable to connect to database", exc);
         }
     }
     
@@ -47,7 +49,9 @@ public class View {
         SaleLiveLoggDTO a = contr.addItem(itemID, Quantity);
         System.out.println(" -- Add " + Quantity + " item of id " + itemID + ": \n" + a.toString());
         } catch (ExceptionItemNotFound exc){
-            writeErrorLogg("Can not add the item to the shoppinglist", exc);
+            writeErrorLogg("Can not find the itom", exc);
+        } catch (ExceptionDatabaseFailConnection exc){
+            writeErrorLogg("Unable to connect to database", exc);
         }
     }
     

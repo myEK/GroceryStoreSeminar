@@ -39,8 +39,9 @@ public class Controller {
      * @param itemID Items Id
      * @return Info at the Item and info of the sale. 
      * @throws ExceptionItemNotFound
+     * @throws ExceptionDatabaseFailConnection 
      */
-    public SaleLiveLoggDTO addItem(String itemID) throws ExceptionItemNotFound{
+    public SaleLiveLoggDTO addItem(String itemID) throws ExceptionItemNotFound, ExceptionDatabaseFailConnection{
         return addItem(itemID, 1);
         
     }
@@ -51,8 +52,9 @@ public class Controller {
     * @param Quantity Of the Item
     * @return Info at the Item and info of the sale. 
     * @throws ExceptionItemNotFound
-    */
-    public SaleLiveLoggDTO addItem(String itemID, double Quantity) throws ExceptionItemNotFound {
+     * @throws ExceptionDatabaseFailConnection 
+     */
+    public SaleLiveLoggDTO addItem(String itemID, double Quantity) throws ExceptionItemNotFound, ExceptionDatabaseFailConnection {
         ItemDTO item = iventoryRegisty.serachItem(itemID);
         return sale.addItem(item, Quantity);
     }

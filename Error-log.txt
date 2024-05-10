@@ -18,3 +18,61 @@ se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could
 	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
 
 
+Error, Exception was thrown: Can not conect to the databas, (ExternalIventorySystem) 
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionDatabaseFailConnection: Can not conect to the databas, (ExternalIventorySystem) 
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:30)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:45)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:75)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Can not conect to the databas, (ExternalIventorySystem) 
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionDatabaseFailConnection: Can not conect to the databas, (ExternalIventorySystem) 
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:30)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:45)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:76)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Can not conect to the databas, (ExternalIventorySystem) 
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionDatabaseFailConnection: Can not conect to the databas, (ExternalIventorySystem) 
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:30)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:45)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:77)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Can not conect to the databas, (ExternalIventorySystem) 
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionDatabaseFailConnection: Can not conect to the databas, (ExternalIventorySystem) 
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:30)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:49)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:78)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Can not conect to the databas, (ExternalIventorySystem) 
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionDatabaseFailConnection: Can not conect to the databas, (ExternalIventorySystem) 
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:30)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:49)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:79)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Item could not be retrieved with (ItemDB) ID: 009
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could not be retrieved with (ItemDB) ID: 009
+	at se.mtry.iv1350.grocerystoreseminar.controller.dammyDB.ItemDB.get(ItemDB.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:33)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:49)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:79)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
