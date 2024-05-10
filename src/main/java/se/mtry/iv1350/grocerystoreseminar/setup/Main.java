@@ -1,5 +1,6 @@
 package se.mtry.iv1350.grocerystoreseminar.setup;
 
+import java.io.IOException;
 import se.mtry.iv1350.grocerystoreseminar.integration.ExternalSystem;
 import se.mtry.iv1350.grocerystoreseminar.integration.Printer;
 import se.mtry.iv1350.grocerystoreseminar.controller.Controller;
@@ -15,6 +16,7 @@ public class Main {
      * @param args programet tar inga start värden. 
      */
     public static void main(String[] args){
+        try {
         ExternalSystem exSystem = new ExternalSystem();
         Printer printer = new Printer();
         Controller contr = new Controller(exSystem, printer);
@@ -22,5 +24,9 @@ public class Main {
 
         // run test fake program
         view.runFakeTestDevelop();
+        } catch (IOException ex) {
+            System.out.println("Error, can not run the program");
+            System.out.println(ex);
+        }
     }
 }

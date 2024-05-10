@@ -1,14 +1,7 @@
 package se.mtry.iv1350.grocerystoreseminar.controller;
 
-import se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTO;
-import se.mtry.iv1350.grocerystoreseminar.dto.ItemDTO;
-import se.mtry.iv1350.grocerystoreseminar.dto.SaleLiveLoggDTO;
-import se.mtry.iv1350.grocerystoreseminar.integration.Printer;
-import se.mtry.iv1350.grocerystoreseminar.integration.ExternalSystem;
-import se.mtry.iv1350.grocerystoreseminar.integration.ExternalAccountingSystem;
-import se.mtry.iv1350.grocerystoreseminar.integration.ExternalDiscountsSystem;
-import se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem;
-
+import se.mtry.iv1350.grocerystoreseminar.dto.*;
+import se.mtry.iv1350.grocerystoreseminar.integration.*;
 import se.mtry.iv1350.grocerystoreseminar.model.Sale;
 
 /**
@@ -45,21 +38,26 @@ public class Controller {
      * Add a item in the system, To check database and save in sale
      * @param itemID Items Id
      * @return Info at the Item and info of the sale. 
+     * @throws ExceptionItemNotFound
      */
-    public SaleLiveLoggDTO addItem(String itemID){
+    public SaleLiveLoggDTO addItem(String itemID) throws ExceptionItemNotFound{
         return addItem(itemID, 1);
+        
     }
     
     /**
-    * Add a item in the system, To check database and save in sale
+    * Add a item in the system, 
     * @param itemID Items Id
     * @param Quantity Of the Item
     * @return Info at the Item and info of the sale. 
+    * @throws ExceptionItemNotFound
     */
-    public SaleLiveLoggDTO addItem(String itemID, double Quantity){
+    public SaleLiveLoggDTO addItem(String itemID, double Quantity) throws ExceptionItemNotFound {
         ItemDTO item = iventoryRegisty.serachItem(itemID);
         return sale.addItem(item, Quantity);
     }
+    
+    
     
     /**
      * End sale the value of custmer to pay.

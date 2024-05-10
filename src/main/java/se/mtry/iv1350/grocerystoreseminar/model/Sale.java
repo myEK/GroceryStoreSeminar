@@ -21,7 +21,7 @@ public class Sale {
     /**
      * Check if the item value is OK to add in the lits, 
      * Or return rerror info
-     * @param item The new item
+     * @param item The new ItemDTO
      * @param Quantity of the new item
      * @return Sale live update info.
      */

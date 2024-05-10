@@ -21,10 +21,15 @@ public class ExternalIventorySystem {
     /**
      * Sert the data in database. 
      * @param itemID IDnummret för produkten
-     * @return ItemDTO of the Item or Null if not find. 
+     * @return ItemDTO of the Item or Null if not find.
+     * @throws ExceptionItemNotFound
      */
-    public ItemDTO serachItem(String itemID){
-       return db.get(itemID);
+    public ItemDTO serachItem(String itemID) throws ExceptionItemNotFound{
+       try {
+           return db.get(itemID);
+       } catch (ExceptionItemNotFound exc){
+           throw exc;
+       }
     }
     
     public void loggSale(EndSaleDTO ex){

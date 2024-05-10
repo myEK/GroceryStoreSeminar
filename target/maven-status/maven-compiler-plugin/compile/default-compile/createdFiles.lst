@@ -1,13 +1,3 @@
-se\mtry\iv1350\grocerystoreseminar\integration\ExternalDiscountsSystem.class
-se\mtry\iv1350\grocerystoreseminar\integration\ExternalSystem.class
-se\mtry\iv1350\grocerystoreseminar\dto\EndSaleDTO.class
-se\mtry\iv1350\grocerystoreseminar\dto\SaleLiveLoggDTO.class
-se\mtry\iv1350\grocerystoreseminar\view\View.class
-se\mtry\iv1350\grocerystoreseminar\controller\dammyDB\ItemDB.class
-se\mtry\iv1350\grocerystoreseminar\setup\Main.class
-se\mtry\iv1350\grocerystoreseminar\integration\ExternalIventorySystem.class
-se\mtry\iv1350\grocerystoreseminar\integration\Printer.class
-se\mtry\iv1350\grocerystoreseminar\controller\Controller.class
-se\mtry\iv1350\grocerystoreseminar\dto\ItemListDTO.class
-se\mtry\iv1350\grocerystoreseminar\integration\ExternalAccountingSystem.class
+se\mtry\iv1350\grocerystoreseminar\util\loggSystem.class
+se\mtry\iv1350\grocerystoreseminar\view\ErrorMessageLogg.class
 se\mtry\iv1350\grocerystoreseminar\dto\PriceDTO.class

@@ -1,0 +1,20 @@
+Error, Exception was thrown: Item could not be retrieved with (ItemDB) ID: 009
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could not be retrieved with (ItemDB) ID: 009
+	at se.mtry.iv1350.grocerystoreseminar.controller.dammyDB.ItemDB.get(ItemDB.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:29)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:56)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:48)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:76)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Item could not be retrieved with (ItemDB) ID: 009
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could not be retrieved with (ItemDB) ID: 009
+	at se.mtry.iv1350.grocerystoreseminar.controller.dammyDB.ItemDB.get(ItemDB.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:29)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:56)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:47)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:75)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+

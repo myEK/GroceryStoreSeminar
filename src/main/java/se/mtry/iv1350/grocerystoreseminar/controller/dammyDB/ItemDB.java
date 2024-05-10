@@ -1,6 +1,7 @@
 package se.mtry.iv1350.grocerystoreseminar.controller.dammyDB;
 
 import se.mtry.iv1350.grocerystoreseminar.dto.ItemDTO;
+import se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound;
 
 /**
  *
@@ -8,10 +9,11 @@ import se.mtry.iv1350.grocerystoreseminar.dto.ItemDTO;
  */
 public class ItemDB {
     private ItemDTO[] data;
-    
-    public ItemDB(){
-        data = new ItemDTO[10];
-        
+
+    public ItemDB() {
+        data = new ItemDTO[8];
+
+        data[0] = new ItemDTO("000", "Sand", "från Skåne, lösvikt", 25.0, 25.0);
         data[1] = new ItemDTO("001", "Tomat", "från Skåne", 1.0, 12.0);
         data[2] = new ItemDTO("002", "Gurka", "från Skåne", 2.0, 12.0);
         data[3] = new ItemDTO("003", "Steklök", "från Skåne", 3.0, 12.0);
@@ -21,18 +23,18 @@ public class ItemDB {
         data[7] = new ItemDTO("007", "Purjelök", "från Skåne", 7.0, 12.0);
     }
 
-    public ItemDTO get(String itemID){
-        for(int i = 0; i < data.length; i++){
-            try {
-                if(itemID.equals(data[i].getID())){
-                    return data[i];
-                }
-            } catch(Exception e) {
-                // Not Find; 
+    /**
+     * Return the Item of the item equals ID. 
+     * @param itemID item searches for
+     * @return the itemDTO of the itomDTO
+     * @throws ExceptionItemNotFound 
+     */
+    public ItemDTO get(String itemID) throws ExceptionItemNotFound{
+        for (ItemDTO item : data) {
+            if(itemID.equals(item.getID())) {
+                return item;
             }
         }
-        return null; 
+        throw new ExceptionItemNotFound("Item could not be retrieved with (ItemDB) ID: " + itemID);
     }
 }
-
-
