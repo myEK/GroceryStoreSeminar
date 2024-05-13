@@ -19,6 +19,18 @@ public class ExternalIventorySystem {
     }
     
     /**
+     * Add a new item to the ExternalIventorySystem databas. 
+     * @param id
+     * @param name
+     * @param description
+     * @param price
+     * @param vto 
+     */
+    public void addNewItemToDB(String id, String name, String description, double price, double vto){
+        db.addnewItem(id, name, description, price, vto);
+    }
+    
+    /**
      * Sert the data in database. 
      * @param itemID IDnummret för produkten
      * @return ItemDTO of the Item or Null if not find.

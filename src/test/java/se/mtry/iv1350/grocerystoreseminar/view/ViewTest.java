@@ -1,6 +1,7 @@
 package se.mtry.iv1350.grocerystoreseminar.view;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,8 +21,12 @@ public class ViewTest {
         Printer printer = new Printer();
         ExternalSystem exSystem = new ExternalSystem();
         Controller contr = new Controller(exSystem, printer);
+        try {
         instanceToTest = new View(contr);
-        
+        } catch (IOException ex) {
+            System.err.println(ex);
+            fail("The setUp() error.");
+        } 
         printBAOS = new ByteArrayOutputStream();
         PrintStream printOut = new PrintStream(printBAOS);
         printSTOrg = System.out;

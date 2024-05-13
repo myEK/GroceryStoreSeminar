@@ -38,7 +38,7 @@ public class View {
             SaleLiveLoggDTO a = contr.addItem(itemID);
             System.out.println(" -- Add 1 item of id " + itemID + ": \n" + a.toString());
         } catch (ExceptionItemNotFound exc){
-            writeErrorLogg("Can not find the itom", exc);
+            writeErrorLogg("Can not find the itom, NO item with the specified identifier is found", exc);
         } catch (ExceptionDatabaseFailConnection exc){
             writeErrorLogg("Unable to connect to database", exc);
         }
@@ -48,8 +48,8 @@ public class View {
         try{
         SaleLiveLoggDTO a = contr.addItem(itemID, Quantity);
         System.out.println(" -- Add " + Quantity + " item of id " + itemID + ": \n" + a.toString());
-        } catch (ExceptionItemNotFound exc){
-            writeErrorLogg("Can not find the itom", exc);
+        } catch (ExceptionItemNotFound exc){       
+            writeErrorLogg("Can not find the itom, NO item with the specified identifier is found", exc);
         } catch (ExceptionDatabaseFailConnection exc){
             writeErrorLogg("Unable to connect to database", exc);
         }
