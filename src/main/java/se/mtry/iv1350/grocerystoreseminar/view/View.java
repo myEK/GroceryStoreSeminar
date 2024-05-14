@@ -84,6 +84,11 @@ public class View {
         } catch (Exception exc) {
             writeErrorLogg("Failed to rune the program", exc);
         }
+        try {
+  Thread.sleep(2000);
+} catch (InterruptedException e) {
+  Thread.currentThread().interrupt();
+}
         try{
         newSale();
         addItem("005");
@@ -96,6 +101,11 @@ public class View {
         } catch (Exception exc) {
             writeErrorLogg("Failed to rune the program", exc);
         }
+        try {
+  Thread.sleep(1000);
+} catch (InterruptedException e) {
+  Thread.currentThread().interrupt();
+}
         try{
         newSale();
         addItem("005");
