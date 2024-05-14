@@ -1,4 +1,7 @@
 se\mtry\iv1350\grocerystoreseminar\util\loggSystem.class
+se\mtry\iv1350\grocerystoreseminar\model\IncomeObserver.class
 se\mtry\iv1350\grocerystoreseminar\view\ErrorMessageLogg.class
+se\mtry\iv1350\grocerystoreseminar\view\TotalRevenueFileOutput.class
 se\mtry\iv1350\grocerystoreseminar\integration\ExceptionDatabaseFailConnection.class
+se\mtry\iv1350\grocerystoreseminar\view\TotalRevenueView.class
 se\mtry\iv1350\grocerystoreseminar\dto\PriceDTO.class

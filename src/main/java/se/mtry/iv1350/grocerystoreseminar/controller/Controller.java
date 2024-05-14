@@ -1,7 +1,11 @@
 package se.mtry.iv1350.grocerystoreseminar.controller;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import se.mtry.iv1350.grocerystoreseminar.dto.*;
 import se.mtry.iv1350.grocerystoreseminar.integration.*;
+import se.mtry.iv1350.grocerystoreseminar.model.IncomeObserver;
 import se.mtry.iv1350.grocerystoreseminar.model.Sale;
 
 /**
@@ -14,6 +18,8 @@ public class Controller {
     private ExternalDiscountsSystem discountRegisty;
     private ExternalIventorySystem iventoryRegisty;
     private Sale sale;
+    
+    private List<IncomeObserver> incomeObservers = new ArrayList<>();
     
     /**
      * Setup controllens anslutningar. 
@@ -31,7 +37,8 @@ public class Controller {
      * Cerat a new sale to run. Denna metod måste anroppas för programet ska kunna hantera en nytt köp.
      */
     public void newSale(){
-        sale = new Sale(); 
+        sale = new Sale();
+        sale.addIncomeObserver(incomeObservers);
     }
     
     /**
@@ -82,5 +89,9 @@ public class Controller {
         discountRegisty.loggSale(endSaleData);
         iventoryRegisty.loggSale(endSaleData);
         return exchange;
+    }
+    
+    public void addIncomeObserver(IncomeObserver obs) {
+        incomeObservers.add(obs);
     }
 }

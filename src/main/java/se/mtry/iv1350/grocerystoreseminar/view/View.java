@@ -22,6 +22,8 @@ public class View {
      */
     public View(Controller contr) throws IOException{
         this.contr = contr;
+        contr.addIncomeObserver(new TotalRevenueView());
+        contr.addIncomeObserver(new TotalRevenueFileOutput());
         this.logFile = new loggSystem();
     }
     
@@ -70,6 +72,30 @@ public class View {
      * Code to run and test the program in develop step. 
      */
     public void runFakeTestDevelop(){
+        try{
+        newSale();
+        addItem("005");
+        addItem("002");
+        addItem("005");
+        addItem("007",3);
+        addItem("009",2);
+        getPay();
+        endSale();
+        } catch (Exception exc) {
+            writeErrorLogg("Failed to rune the program", exc);
+        }
+        try{
+        newSale();
+        addItem("005");
+        addItem("002");
+        addItem("005");
+        addItem("007",3);
+        addItem("009",2);
+        getPay();
+        endSale();
+        } catch (Exception exc) {
+            writeErrorLogg("Failed to rune the program", exc);
+        }
         try{
         newSale();
         addItem("005");

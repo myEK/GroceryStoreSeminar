@@ -11,7 +11,8 @@ public class Price {
     private double price; 
     private double vto;
     private double total;
-    private double pay; 
+    private double pay;
+    
     
     /**
      * Cerat a new sale price logg

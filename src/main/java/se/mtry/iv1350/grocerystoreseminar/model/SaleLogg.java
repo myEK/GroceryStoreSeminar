@@ -26,11 +26,14 @@ public class SaleLogg {
         itemList = new ItemList[0];
         discountList = new DiscountList[0];
     }
+     
+
     
     /**
      * add and update the Itema and Quantity. last update price.  
      * @param item the new item 
      * @param Quantity of the new item. 
+     * @return 
      */
     public SaleLiveLoggDTO addItem(ItemDTO item, double Quantity){
         try {
@@ -122,6 +125,4 @@ public class SaleLogg {
         return new EndSaleDTO(price.getDTO(), list, timeStartSale, LocalTime.now());
         
     }
-    
-    
 }

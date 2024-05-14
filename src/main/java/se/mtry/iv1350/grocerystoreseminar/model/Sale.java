@@ -4,18 +4,38 @@ import se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTO;
 import se.mtry.iv1350.grocerystoreseminar.dto.ItemDTO;
 import se.mtry.iv1350.grocerystoreseminar.dto.SaleLiveLoggDTO;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Hanterar det beräkningar för köpet Sale
  * @author mtrys
  */
 public class Sale {
     private SaleLogg salelogg;
+    private List<IncomeObserver> incomeObservers = new ArrayList<>();
     
     /**
      * Cerate the data for a new sale. 
      */
     public Sale(){
         salelogg = new SaleLogg();
+    }
+    
+    private void notifyObservers() {
+        for (IncomeObserver obs : incomeObservers){
+            obs.newAddToTotalIncome(salelogg.getPay());
+        }
+    }
+    
+    /**
+     * the list of IncomeObserver
+     * @param obsList IncomeObserver
+     */
+    public void addIncomeObserver(List<IncomeObserver> obsList) {
+        for(IncomeObserver obs : obsList){
+            incomeObservers.add(obs);
+        }
     }
     
     /**
@@ -71,6 +91,7 @@ public class Sale {
     }
     
     public EndSaleDTO endSale(){
+        notifyObservers();
         return salelogg.endSale();
     }
     
