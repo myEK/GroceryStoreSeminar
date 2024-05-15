@@ -24,22 +24,30 @@ public class ExternalIventorySystemTest {
     }
     
     @Test
+    void testSerachItemThrowsExceptionNotIfItemFound(){      
+        ItemDTO ex = new ItemDTO("Test000", "Sand", "från Skane, lösvikt", 25.0, 25.0);
+        
+        try {
+            ItemDTO re = instanceToTest.serachItem("Test000");
+            assertTrue(ex.getID().equals(re.getID()), "Item ID is not return equals");
+            assertTrue(ex.getName().equals(re.getName()), "Item Name is not return equals");
+        } catch (Exception e){
+            System.out.print("Error, Can not cerat the file to logg, " + e.getMessage());
+        }
+        
+    }
+    
+    @Test
     void testSerachItemThrowsExceptionItemNotFound(){      
         assertThrows(ExceptionItemNotFound.class, () -> {
-            instanceToTest.serachItem("TestNotFoundID");
+            instanceToTest.serachItem("NotFound");
         });
     }
 
     @Test
     void testSerachItemThrowsExceptionDatabaseFailConnection(){
         /* 
-        TODO:
-        
-        Ingen bra lösning för testa deta. 
-        
-        assertThrows(ExceptionDatabaseFailConnection.class, () -> {
-            instanceToTest.serachItem("DatabaseFailID");
-        });
+        TODO: Ingen bra lösning för testa deta. 
         */
         fail("TODO");
         

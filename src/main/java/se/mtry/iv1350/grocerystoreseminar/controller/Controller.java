@@ -50,7 +50,6 @@ public class Controller {
      */
     public SaleLiveLoggDTO addItem(String itemID) throws ExceptionItemNotFound, ExceptionDatabaseFailConnection{
         return addItem(itemID, 1);
-        
     }
     
     /**

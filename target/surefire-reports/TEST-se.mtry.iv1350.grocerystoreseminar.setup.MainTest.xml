@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="se.mtry.iv1350.grocerystoreseminar.setup.MainTest" time="0.176" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="se.mtry.iv1350.grocerystoreseminar.setup.MainTest" time="3.2" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="SE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\mtrys\AppData\Local\Temp\surefire9170839115203161589\surefirebooter-20240513113541619_3.jar C:\Users\mtrys\AppData\Local\Temp\surefire9170839115203161589 2024-05-13T11-35-41_214-jvmRun1 surefire-20240513113541619_1tmp surefire_0-20240513113541619_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mtrys\AppData\Local\Temp\surefire12243294072510982938\surefirebooter-20240515183223874_3.jar C:\Users\mtrys\AppData\Local\Temp\surefire12243294072510982938 2024-05-15T18-32-23_559-jvmRun1 surefire-20240515183223874_1tmp surefire_0-20240515183223874_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\kth\IV1350 VT24-2 Object-Oriented Design\Sem3\GroceryStoreSeminar\target\test-classes;C:\kth\IV1350 VT24-2 Object-Oriented Design\Sem3\GroceryStoreSeminar\target\classes;C:\Users\mtrys\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\mtrys\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\mtrys\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mtrys\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\mtrys\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\mtrys\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\mtrys\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mtrys\AppData\Local\Temp\surefire9170839115203161589\surefirebooter-20240513113541619_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mtrys\AppData\Local\Temp\surefire12243294072510982938\surefirebooter-20240515183223874_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -49,12 +49,12 @@
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\ImageMagick-7.1.0-Q16-HDRI;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;C:\Program Files\Wolfram Research\WolframScript\;C:\Program Files\erl-24.1.4\bin;C:\Program Files (x86)\Elixir\bin;C:\Users\mtrys\.mix\escripts;C:\Program Files\Git\cmd;C:\Program Files\gnuplot\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Elixir\bin;C:\Program Files\Erlang OTP\bin;C:\Program Files (x86)\Elixir\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\mtrys\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mtrys\AppData\Local\GitHubDesktop\bin;C:\texlive\2021\bin\win32;C:\Users\mtrys\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\ImageMagick-7.1.0-Q16-HDRI;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;C:\Program Files\Wolfram Research\WolframScript\;C:\Program Files\erl-24.1.4\bin;C:\Program Files (x86)\Elixir\bin;C:\WINDOWS\system32\config\systemprofile\.mix\escripts;C:\Program Files\Git\cmd;C:\Program Files\gnuplot\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Elixir\bin;C:\Program Files\Erlang OTP\bin;C:\Program Files (x86)\Elixir\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\mtrys\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mtrys\AppData\Local\GitHubDesktop\bin;C:\texlive\2021\bin\win32;C:\Users\mtrys\AppData\Roaming\npm;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testUiHasStartad" classname="se.mtry.iv1350.grocerystoreseminar.setup.MainTest" time="0.171"/>
+  <testcase name="testUiHasStartad" classname="se.mtry.iv1350.grocerystoreseminar.setup.MainTest" time="3.2"/>
 </testsuite>
