@@ -34,7 +34,7 @@ public class Controller {
     }
     
     /**
-     * Cerat a new sale to run. Denna metod måste anroppas för programet ska kunna hantera en nytt köp.
+     * Cerat a new sale to run.
      */
     public void newSale(){
         sale = new Sale();
@@ -91,6 +91,10 @@ public class Controller {
         return exchange;
     }
     
+    /**
+     * Add the Observer list for income
+     * @param obs 
+     */
     public void addIncomeObserver(IncomeObserver obs) {
         incomeObservers.add(obs);
     }

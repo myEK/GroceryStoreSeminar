@@ -2,7 +2,7 @@ package se.mtry.iv1350.grocerystoreseminar.view;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import se.mtry.iv1350.grocerystoreseminar.model.IncomeObserver;
 

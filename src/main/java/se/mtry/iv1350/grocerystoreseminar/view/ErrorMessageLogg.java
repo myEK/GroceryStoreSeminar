@@ -1,9 +1,5 @@
 package se.mtry.iv1350.grocerystoreseminar.view;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-
 /**
  * Handles execution of error messages
  * @author mtrys

@@ -90,6 +90,10 @@ public class Sale {
         return salelogg.addPay(pay);
     }
     
+    /**
+     * To get the EndSaleDTO of the sale
+     * @return EndSaleDTO
+     */
     public EndSaleDTO endSale(){
         notifyObservers();
         return salelogg.endSale();
