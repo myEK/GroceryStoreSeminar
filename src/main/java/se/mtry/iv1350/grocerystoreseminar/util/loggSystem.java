@@ -18,8 +18,13 @@ public class loggSystem {
      * @throws IOException 
      */
     public loggSystem() throws IOException {
-            FileWriter file = new FileWriter(fileLoggName);
+        // file = new PrintWriter(new FileWriter("Error-log.txt", true), true);
+        try {
+            FileWriter file = new FileWriter(fileLoggName, true);
             logfile = new PrintWriter(file, true);
+        } catch (Exception e){
+            System.out.print("Error, Can not cerat the file to logg, " + e.getMessage());
+        }
     }
 
     /**

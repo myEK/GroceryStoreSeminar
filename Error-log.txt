@@ -28,3 +28,33 @@ se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could
 	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
 
 
+Error, Exception was thrown: Item could not be retrieved with (ItemDB) ID: 009
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could not be retrieved with (ItemDB) ID: 009
+	at se.mtry.iv1350.grocerystoreseminar.controller.dammyDB.ItemDB.get(ItemDB.java:44)
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:45)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:65)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:51)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:81)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Item could not be retrieved with (ItemDB) ID: 009
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could not be retrieved with (ItemDB) ID: 009
+	at se.mtry.iv1350.grocerystoreseminar.controller.dammyDB.ItemDB.get(ItemDB.java:44)
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:45)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:65)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:51)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:98)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+
+Error, Exception was thrown: Item could not be retrieved with (ItemDB) ID: 009
+se.mtry.iv1350.grocerystoreseminar.integration.ExceptionItemNotFound: Item could not be retrieved with (ItemDB) ID: 009
+	at se.mtry.iv1350.grocerystoreseminar.controller.dammyDB.ItemDB.get(ItemDB.java:44)
+	at se.mtry.iv1350.grocerystoreseminar.integration.ExternalIventorySystem.serachItem(ExternalIventorySystem.java:45)
+	at se.mtry.iv1350.grocerystoreseminar.controller.Controller.addItem(Controller.java:65)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.addItem(View.java:51)
+	at se.mtry.iv1350.grocerystoreseminar.view.View.runFakeTestDevelop(View.java:115)
+	at se.mtry.iv1350.grocerystoreseminar.setup.Main.main(Main.java:26)
+
+

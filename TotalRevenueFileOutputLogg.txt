@@ -1,12 +1,12 @@
-15/05-2024 on time logg: 16:33:25
+15/05-2024 on time logg: 16:35:54
  Add sale to incress total income of: 36.96
  Total Income of all sale is: 36.96
 
-15/05-2024 on time logg: 16:33:27
+15/05-2024 on time logg: 16:35:56
  Add sale to incress total income of: 36.96
  Total Income of all sale is: 73.92
 
-15/05-2024 on time logg: 16:33:28
+15/05-2024 on time logg: 16:35:57
  Add sale to incress total income of: 36.96
  Total Income of all sale is: 110.88
 
