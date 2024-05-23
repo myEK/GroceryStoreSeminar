@@ -36,7 +36,7 @@ public class SaleLogg {
      * @return 
      */
     public SaleLiveLoggDTO addItem(ItemDTO item, double Quantity){
-        try {
+        
             int pos = itemPos(item); 
             if(pos < itemList.length){
                 itemList[pos].addQuantity(Quantity);
@@ -46,21 +46,6 @@ public class SaleLogg {
             
             price.addItem(item, Quantity);
             return new SaleLiveLoggDTO(item, Quantity, price.getPrice(), price.getVto()); 
-            
-        } catch(Exception e) {
-            System.err.println("Can not add item to the list");
-            return itemNotFind();
-        }
-        
-        
-    }
-    
-    /**
-     * If the item is not find; 
-     * @return 
-     */
-    public SaleLiveLoggDTO itemNotFind(){
-        return new SaleLiveLoggDTO("error: Item is not added.", price.getPrice(), price.getVto()); 
     }
     
     /**

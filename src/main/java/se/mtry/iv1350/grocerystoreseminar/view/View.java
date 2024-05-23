@@ -37,8 +37,9 @@ public class View {
     
     private void addItem(String itemID){
         try{
-            SaleLiveLoggDTO a = contr.addItem(itemID);
-            System.out.println(" -- Add 1 item of id " + itemID + ": \n" + a.toString());
+            System.out.println(" -- Add 1 item:");
+            printSaleLiveLoggDTO(contr.addItem(itemID));
+            
         } catch (ExceptionItemNotFound exc){
             writeErrorLogg("Can not find the itom, NO item with the specified identifier is found", exc);
         } catch (ExceptionDatabaseFailConnection exc){
@@ -46,10 +47,19 @@ public class View {
         }
     }
     
+    private void printSaleLiveLoggDTO(SaleLiveLoggDTO a){
+        System.out.println("Item ID: " + a.getItem().getID() + " Item name: " + a.getItem().getName());
+        System.out.println("Description : " + a.getItem().getDescription());
+        System.out.println("price : " + a.getTotalPrice() + " SEK ( including VAT: " +
+                a.getTotalVAT() + " ) for " + a.getQuantity() + " at " + a.getItem().getPrice() + " piece \n");
+        
+    }
+    
     private void addItem(String itemID, double Quantity){
         try{
-        SaleLiveLoggDTO a = contr.addItem(itemID, Quantity);
-        System.out.println(" -- Add " + Quantity + " item of id " + itemID + ": \n" + a.toString());
+        System.out.println(" -- Add " + Quantity + " items");
+        printSaleLiveLoggDTO(contr.addItem(itemID,Quantity));
+                
         } catch (ExceptionItemNotFound exc){       
             writeErrorLogg("Can not find the itom, NO item with the specified identifier is found", exc);
         } catch (ExceptionDatabaseFailConnection exc){

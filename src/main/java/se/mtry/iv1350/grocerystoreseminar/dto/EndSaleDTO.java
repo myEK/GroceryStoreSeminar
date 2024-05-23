@@ -20,39 +20,19 @@ public class EndSaleDTO {
         this.timeEndSale = timeEnd;
     }
     
-    public double getChange(){
-        return price.getChange();
+    public PriceDTO getPrice(){
+        return price;
     }
     
-    public String getItemID(int i){
-        return itemList[i].getItemID(); 
+    public LocalTime getTimeStartSale(){
+        return timeStartSale;
     }
     
-    public double getQuantity(int i){
-        return itemList[i].getQuantity(); 
+    public LocalTime getTimeEndSale(){
+        return timeEndSale;
     }
     
-    public int getItemIntlength(){
-        return itemList.length; 
+    public ItemListDTO[] getItemList() {
+        return itemList;
     }
-    
-    public String toString(){
-        StringBuilder builder = new StringBuilder();
-        builder.append("Time satar of sale: " + this.timeStartSale + "\n");
-        builder.append("Time end of sale: " + this.timeEndSale + "\n\n");
-        
-        builder.append("Itemlist: \n");
-        for(int i = 0; i < itemList.length; i++){
-            builder.append(this.itemList[i].toString() + "\n");
-        }
-                
-        builder.append("\n"
-                + "Total cost (incl VAT): " + this.price.getPrice() + " SEK \n" );
-        builder.append("Total VAT: " + this.price.getVAT() + " SEK \n\n");
-        
-        builder.append("Pay Cash: " + this.price.getPay() + " SEK \n" );
-        builder.append("Change: " + this.price.getChange() + " SEK \n\n");
-        return builder.toString();
-    }
-    
 }

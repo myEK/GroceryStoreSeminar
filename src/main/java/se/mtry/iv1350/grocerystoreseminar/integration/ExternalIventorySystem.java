@@ -50,8 +50,8 @@ public class ExternalIventorySystem {
     
     public void loggSale(EndSaleDTO ex){
         System.out.println("Sale logg ExternalIventorySystem ");
-        for(int i = 0; i < ex.getItemIntlength(); i++){
-            System.out.println("Logg " + ex.getQuantity(i) + " of item: " + ex.getItemID(i));
+        for(int i = 0; i < ex.getItemList().length; i++){
+            System.out.println("Logg " + ex.getItemList()[i].getQuantity() + " of item: " + ex.getItemList()[i].getItemID());
         }
         System.out.println("...\n\n");
     }

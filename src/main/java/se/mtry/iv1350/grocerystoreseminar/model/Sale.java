@@ -45,33 +45,10 @@ public class Sale {
      * @param Quantity of the new item
      * @return Sale live update info.
      */
-    public SaleLiveLoggDTO addItem(ItemDTO item, double Quantity){
-        if(!errorCheck(item)){
-            // Error at the Item.
-            // System.err.println("Item is invalid");
-            return salelogg.itemNotFind(); 
-        }
-        
+    public SaleLiveLoggDTO addItem(ItemDTO item, double Quantity){      
         return salelogg.addItem(item, Quantity);
        
     }
-    
-    /**
-     * Chech if the itam is OK
-     * @param item of the new itemDTO
-     * @return True or false.
-     */
-    private boolean errorCheck(ItemDTO item){
-        try {
-            if(item != null){
-                return true; 
-            }
-        } catch(Exception e) {
-            // Item is not find,
-            return false;
-        }
-        return false;
-    } 
     
     /**
      * End sale the value of custmer to pay.
