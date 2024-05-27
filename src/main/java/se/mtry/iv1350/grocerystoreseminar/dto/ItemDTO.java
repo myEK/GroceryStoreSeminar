@@ -31,10 +31,18 @@ public class ItemDTO {
         return id;
     }
     
+    /**
+     * Return price for one item
+     * @return double
+     */
     public double getPrice(){
         return price;
     }
     
+    /**
+     * VTO satsen 6.00, 12.00, 25.00
+     * @return double
+     */
     public double getVTO(){
         return vto;
     }

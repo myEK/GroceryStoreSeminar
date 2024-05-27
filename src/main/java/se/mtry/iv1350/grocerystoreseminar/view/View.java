@@ -41,7 +41,7 @@ public class View {
             printSaleLiveLoggDTO(contr.addItem(itemID));
             
         } catch (ExceptionItemNotFound exc){
-            writeErrorLogg("Can not find the itom, NO item with the specified identifier is found", exc);
+            showError("Can not find the itom with the specified identifier " + itemID);
         } catch (ExceptionDatabaseFailConnection exc){
             writeErrorLogg("Unable to connect to database", exc);
         }
@@ -49,9 +49,10 @@ public class View {
     
     private void printSaleLiveLoggDTO(SaleLiveLoggDTO a){
         System.out.println("Item ID: " + a.getItem().getID() + " Item name: " + a.getItem().getName());
-        System.out.println("Description : " + a.getItem().getDescription());
-        System.out.println("price : " + a.getTotalPrice() + " SEK ( including VAT: " +
-                a.getTotalVAT() + " ) for " + a.getQuantity() + " at " + a.getItem().getPrice() + " piece \n");
+        System.out.println("Description: " + a.getItem().getDescription());
+        System.out.println("Price: " + a.getItem().getPrice()*a.getQuantity()+ " for " + a.getQuantity() + " piece" );
+        System.out.println("Total price (includ VAT): " + a.getTotalPrice() + " SEK ( including VAT: " +
+                a.getTotalVAT() + " )\n");
         
     }
     
@@ -61,7 +62,7 @@ public class View {
         printSaleLiveLoggDTO(contr.addItem(itemID,Quantity));
                 
         } catch (ExceptionItemNotFound exc){       
-            writeErrorLogg("Can not find the itom, NO item with the specified identifier is found", exc);
+            showError("Can not find the itom with the specified identifier " + itemID);
         } catch (ExceptionDatabaseFailConnection exc){
             writeErrorLogg("Unable to connect to database", exc);
         }
@@ -128,6 +129,10 @@ public class View {
         } catch (Exception exc) {
             writeErrorLogg("Failed to rune the program", exc);
         }
+    }
+    
+    private void showError(String text){
+        errMeg.showError(text);
     }
     
     private void writeErrorLogg(String text, Exception exc){

@@ -43,4 +43,11 @@ public class ItemDB {
         }
         throw new ExceptionItemNotFound("Item could not be retrieved with (ItemDB) ID: " + itemID);
     }
+    
+    /**
+     * // Test if the user can conect to databas
+     */
+    public void checkOK(){
+        // Test if the user can conect to databas
+    }
 }

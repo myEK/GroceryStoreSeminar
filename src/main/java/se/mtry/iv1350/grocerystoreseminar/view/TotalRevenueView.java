@@ -1,5 +1,4 @@
 package se.mtry.iv1350.grocerystoreseminar.view;
-
 import se.mtry.iv1350.grocerystoreseminar.model.IncomeObserver;
 
 /**

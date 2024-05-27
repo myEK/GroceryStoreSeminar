@@ -38,16 +38,31 @@ public class ExternalIventorySystem {
      * @throws ExceptionDatabaseFailConnection To the conation is bad  
      */
     public ItemDTO serachItem(String itemID) throws ExceptionItemNotFound, ExceptionDatabaseFailConnection{
-       if(db.getClass() == null){
-           throw new ExceptionDatabaseFailConnection("Can not conect to the databas, (ExternalIventorySystem) ");          
-       }
-        try {
-           return db.get(itemID);
-       } catch (ExceptionItemNotFound exc){
-           throw exc;
-       }
+       return serachItemInDB(itemID, this.db);
     }
     
+    /**
+     * 
+     * @param itemID to serts
+     * @param data the databas
+     * @return ItemDTO of the item
+     * @throws ExceptionItemNotFound
+     * @throws ExceptionDatabaseFailConnection 
+     */
+    public ItemDTO serachItemInDB(String itemID, ItemDB data) throws ExceptionItemNotFound, ExceptionDatabaseFailConnection{
+        try {
+            data.checkOK();
+        }
+        catch (Exception exc){
+            throw new ExceptionDatabaseFailConnection("Can not conect to the databas, (ExternalIventorySystem) ");   
+        }
+        return data.get(itemID);
+    }
+    
+    /**
+     * 
+     * @param ex Thr endSaleDTO to print in the controllog. 
+     */
     public void loggSale(EndSaleDTO ex){
         System.out.println("Sale logg ExternalIventorySystem ");
         for(int i = 0; i < ex.getItemList().length; i++){

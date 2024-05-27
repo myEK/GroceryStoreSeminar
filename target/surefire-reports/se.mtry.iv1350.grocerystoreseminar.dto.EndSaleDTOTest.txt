@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! -- in se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest
-se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetItemList -- Time elapsed: 0.046 s <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.188 s <<< FAILURE! -- in se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest
+se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetItemList -- Time elapsed: 0.095 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTO.getItemList()" because "instance" is null
-	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetItemList(EndSaleDTOTest.java:58)
+	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetItemList(EndSaleDTOTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,9 +73,9 @@ java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoresemina
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetPrice -- Time elapsed: 0.004 s <<< ERROR!
+se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetPrice -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTO.getPrice()" because "instance" is null
-	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetPrice(EndSaleDTOTest.java:28)
+	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetPrice(EndSaleDTOTest.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,9 +144,9 @@ java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoresemina
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeEndSale -- Time elapsed: 0.002 s <<< ERROR!
+se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeEndSale -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTO.getTimeEndSale()" because "instance" is null
-	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeEndSale(EndSaleDTOTest.java:48)
+	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeEndSale(EndSaleDTOTest.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -215,9 +215,9 @@ java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoresemina
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeStartSale -- Time elapsed: 0.001 s <<< ERROR!
+se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeStartSale -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTO.getTimeStartSale()" because "instance" is null
-	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeStartSale(EndSaleDTOTest.java:38)
+	at se.mtry.iv1350.grocerystoreseminar.dto.EndSaleDTOTest.testGetTimeStartSale(EndSaleDTOTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
