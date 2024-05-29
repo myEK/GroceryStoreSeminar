@@ -22,17 +22,6 @@ public class PriceTest {
         pr = null; 
     }
 
-    /*
-    @Test
-    public void testAddItem() {
-        System.out.println("addItem");
-        ItemDTO item = null;
-        double Quantity = 0.0;
-        Price instance = new Price();
-        instance.addItem(item, Quantity);
-        fail("The test case is a prototype.");
-    }
-*/
 
     @Test
     public void testGetPrice() {

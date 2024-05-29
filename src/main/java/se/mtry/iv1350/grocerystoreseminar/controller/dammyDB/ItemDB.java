@@ -14,7 +14,7 @@ public class ItemDB {
 
     public ItemDB() {
         data = new ArrayList<ItemDTO>();
-        data.add(new ItemDTO("Test000", "Sand", "från Skane, lösvikt", 25.0, 25.0));
+        data.add(new ItemDTO("Test000", "Sand", "des", 25.0, 25.0));
         data.add(new ItemDTO("001", "Tomat", "från Skåne", 1.0, 12.0));
         data.add(new ItemDTO("002", "Gurka", "från Skåne", 2.0, 12.0));
         data.add(new ItemDTO("003", "Steklök", "från Skåne", 3.0, 12.0));

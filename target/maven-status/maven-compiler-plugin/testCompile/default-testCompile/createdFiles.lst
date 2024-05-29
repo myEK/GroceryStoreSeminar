@@ -1,2 +1,9 @@
 se\mtry\iv1350\grocerystoreseminar\dto\ItemDTOTest.class
+se\mtry\iv1350\grocerystoreseminar\model\SaleLoggTest.class
+se\mtry\iv1350\grocerystoreseminar\model\ItemListTest.class
+se\mtry\iv1350\grocerystoreseminar\setup\MainTest.class
+se\mtry\iv1350\grocerystoreseminar\model\PriceTest.class
+se\mtry\iv1350\grocerystoreseminar\dto\PriceDTOTest.class
 se\mtry\iv1350\grocerystoreseminar\view\ViewTest.class
+se\mtry\iv1350\grocerystoreseminar\integration\ExternalIventorySystemTest.class
+se\mtry\iv1350\grocerystoreseminar\dto\ItemListDTOTest.class

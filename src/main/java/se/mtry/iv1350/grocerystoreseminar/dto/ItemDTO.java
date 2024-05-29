@@ -15,6 +15,14 @@ public class ItemDTO {
         
     }
     
+    /**
+     * 
+     * @param id
+     * @param name
+     * @param description
+     * @param price
+     * @param vto 
+     */
     public ItemDTO(String id, String name, String description, double price, double vto){
         this.id = id;
         this.name = name;

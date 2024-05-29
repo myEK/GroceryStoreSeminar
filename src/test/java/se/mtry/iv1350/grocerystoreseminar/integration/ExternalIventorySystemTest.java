@@ -26,10 +26,10 @@ public class ExternalIventorySystemTest {
     @Test
     void testSerachItemThrowsExceptionNotIfItemFound(){      
         try {
-            ItemDTO ex = new ItemDTO("Test000", "Sa", "frt", 25.0, 25.0);
+            ItemDTO ex = new ItemDTO("Test000", "Sand", "des", 25.0, 25.0);
             ItemDTO re = instanceToTest.serachItem("Test000");
             assertTrue(ex.getID().equals(re.getID()), "Item ID is not return equals");
-            assertTrue(ex.getName().equals(re.getName()), "Item Name is not return equals");
+            assertEquals(ex.getName(), re.getName(), "Item Name is not return equals");
         } catch(Exception e) {
             fail("Should not thrown exception");
         } 
@@ -40,6 +40,17 @@ public class ExternalIventorySystemTest {
         assertThrows(ExceptionItemNotFound.class, () -> {
             instanceToTest.serachItem("NotFound");
         });
+    }
+    
+    @Test
+    void testtestSerachItemInDBThrowsExceptionDatabaseNotIfConnectionFound(){      
+        try {
+            ItemDTO ex = new ItemDTO("Test000", "Sand", "des", 25.0, 25.0);
+            ItemDTO re = instanceToTest.serachItem("Test000");
+            assertTrue(ex.getID().equals(re.getID()), "Connection is not OK");
+        } catch(Exception e) {
+            fail("Should not thrown exception");
+        } 
     }
     
     @Test

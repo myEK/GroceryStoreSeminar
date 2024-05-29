@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: se.mtry.iv1350.grocerystoreseminar.view.ViewTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.077 s -- in se.mtry.iv1350.grocerystoreseminar.view.ViewTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.018 s -- in se.mtry.iv1350.grocerystoreseminar.view.ViewTest
